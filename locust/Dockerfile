@@ -1,0 +1,9 @@
+ FROM ubuntu:22.04
+
+RUN apt update
+RUN apt install -y python3-pip
+RUN pip install --upgrade pip
+RUN pip install --upgrade setuptools
+RUN pip install locust
+
+WORKDIR /locust
